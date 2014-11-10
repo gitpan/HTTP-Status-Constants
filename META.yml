@@ -1,5 +1,5 @@
 ---
-abstract: 'interpolable HTTP status constants'
+abstract: ~
 author:
   - 'Robert Rothenberg, C<< <rrwo at cpan.org> >>'
 build_requires:
@@ -21,6 +21,7 @@ no_index:
     - t
 requires:
   Const::Exporter: 0
+  Exporter: 0
   HTTP::Status: 0
   Package::Stash: 0
   perl: 5.01
@@ -30,4 +31,4 @@ resources:
   homepage: http://rrwo.tumblr.com
   license: http://www.perlfoundation.org/artistic_license_2_0
   repository: git://github.com/robrwo/HTTP-Status-Constants.git
-version: '0.001000'
+version: '0.002000'

@@ -4,14 +4,12 @@ use warnings FATAL => 'all';
 use inc::Module::Install;
 
 name 'HTTP-Status-Constants';
-all_from 'lib/HTTP/Status/Constants.pm';
+all_from 'lib/HTTP/Status/Const.pm';
 license 'artistic_2';
 
 perl_version 5.010;
 
 tests_recursive('t');
-
-# tests_recursive('xt');
 
 resources(
     homepage   => 'http://rrwo.tumblr.com',
@@ -26,6 +24,7 @@ build_requires();
 
 requires(
     'Const::Exporter' => 0,
+    'Exporter'        => 0,
     'HTTP::Status'    => 0,
     'Package::Stash'  => 0,
     'version'         => 0.77,
